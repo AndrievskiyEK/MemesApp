@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор мемов</title>
+    <link rel="icon" href="./resources/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+        <div class="col__wrapper">
+            <div class="col">
+                <div class="row">
+                    <h2 class="title">Настройки:</h2>
+                    <div class="settings">
+                        <label class="settings__label">Мем
+                            <select name="" 
+                            id="select"
+                            class="settings__input">
+                            </select>
+                        </label>
+                        <label class="settings__label">Текст сверху
+                            <input id="inputTextTop"
+                            type="text"
+                            name="text"
+                            placeholder="Добавить текст сверху?"
+                            class="settings__input">
+                        </label>
+                        <label class="settings__label">Текст снизу
+                            <input id="inputTextBottom"
+                            type="text"
+                            name="text"
+                            placeholder="Добавить текст снизу?"
+                            class="settings__input">
+                        </label>
+
+                        <div class="settings__color-wrapper">
+                            <label class="settings__color-label">Красный цвет текста:
+                                <input                                 
+                                type="range" 
+                                min="0" 
+                                max="255" 
+                                value="0" 
+                                id="redColorRange"
+                                class="settings__color-input">
+                            </label>
+                            <label class="settings__color-label">Зеленый цвет текста:
+                                <input 
+                                type="range" 
+                                min="0" 
+                                max="255" 
+                                value="0" 
+                                id="greenColorRange"
+                                class="settings__color-input">
+                            </label>
+                            <label class="settings__color-label">Синий цвет текста:
+                                <input 
+                                type="range" 
+                                min="0" 
+                                max="255" 
+                                value="0" 
+                                id="blueColorRange"
+                                class="settings__color-input">
+                            </label>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="title">Превью:</h2>
+                    <div class="memContainer">
+                        <img id="memImg" src="./resources/mem.png" alt="" class="memImg">
+                        <p id="memTextTop" class="memTextTop">Текст сверху</p>
+                        <p id="memTextbottom" class="memTextbottom">Текст снизу</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>  
+    <script src="./JS/model.js"></script>
+    <script src="./JS/view.js"></script>
+    <script src="./JS/api.js"></script>
+    <script src="./JS/controller.js"></script>
+    <script src="./JS/index.js"></script>  
+</body>
+</html>

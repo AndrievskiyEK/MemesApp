@@ -1,0 +1,100 @@
+.col__wrapper{
+    width: 956px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col{
+    margin-top: 105px;
+    display: flex;
+    flex-direction: row;
+    gap: 222px;
+}
+
+.title{
+    margin-bottom: 42px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    font-weight: 400;
+}
+
+.settings__label, .settings__color-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 35px;    
+    line-height: 31px;
+}
+
+.settings__input{
+    box-sizing: border-box;
+    padding: 12px 12px 12px 24px;
+    width: 393px;
+    height: 54px;
+    font-size: 25px;    
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.settings__color-input {
+    width: 393px;
+    -webkit-appearance: none;
+}
+
+.settings__color-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+#redColorRange::-webkit-slider-runnable-track {
+    background-color: red;
+} 
+
+#greenColorRange::-webkit-slider-runnable-track {
+    background-color: green;
+} 
+
+#blueColorRange::-webkit-slider-runnable-track {
+    background-color: blue;
+} 
+
+.memContainer{
+    margin-top: 76px;
+    width: 100%;  
+    max-width: 568px;
+    position: relative;
+}
+
+.memImg{
+    margin: 0 auto;
+    max-width: 568px;
+}
+
+.memTextTop, .memTextbottom{
+    position: absolute;    
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.memTextTop{
+    top: 22px;
+}
+
+.memTextbottom{
+    bottom: 22px;
+}
+
+
